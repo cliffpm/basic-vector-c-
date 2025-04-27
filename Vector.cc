@@ -1,9 +1,9 @@
 // Cliff Pham
-// CSE HW8
+// CSE 
 
 #include "Vector.h"
 
-namespace vector374 {
+namespace vector0 {
 
 // empty vector with 0's for all axis comp.
 Vector::Vector() {
@@ -32,9 +32,6 @@ Vector::~Vector() {
 Vector& Vector::operator=(const Vector &rhs) {
   if (this != &rhs) {
     init(rhs.v_[0], rhs.v_[1], rhs.v_[2]);
-    // for (int i = 0; i < 3; i ++) {
-    //   v_[i] = rhs.v_[i];
-    // }
   }
   return *this;
 }
@@ -76,4 +73,4 @@ void Vector::init(const float x, const float y, const float z) {
   v_[2] = z;
 }
 
-}  // namespace vector374
+}  // namespace vector0
